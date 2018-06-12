@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>overflow消除浮动</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 400px;
+			height: 300px;
+			border: 1px solid red;
+			margin: 100px;
+			background-color: gray;
+		}
+		.box ul{
+			list-style: none;
+		}
+		.box ul li{
+			overflow: hidden;
+			line-height: 50px;
+			/*必须加这个border，。要不然就会重合*/
+			border-bottom: 1px dashed green;
+		}
+		.box ul li .title{
+			float: left;
+		}
+		.box ul li .date{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+		<div class="box">
+		<ul>
+			<li>
+				<span class="title">标题一</span>
+				<span class="date">时间一</span>
+			</li>
+			<li>
+				<span class="title">标题二</span>
+				<span class="date">时间二</span>
+			</li>
+			<li>
+				<span class="title">标题三</span>
+				<span class="date">时间三</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

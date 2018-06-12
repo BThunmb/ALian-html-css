@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>外墙法删除浮动</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.box1{
+			float: left;
+			margin: 0 auto;
+		}
+		.box3{
+			float: left;
+			margin: 0 auto;
+		}
+		.box2{
+			clear: both;
+		}
+		.b10{
+			/*代替margin，因为margin在clear中会失效*/
+			height: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p class="p1">fafarrfafawfa</p>
+	</div>
+	<div class="box2 b10"></div>
+	<div class="box3">
+		<p class="p2">gagagafafawfa</p>
+	</div>
+</body>
+</html>

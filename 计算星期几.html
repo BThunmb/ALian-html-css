@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>计算1000天之后是星期几</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var a = 2;
+		var b = "3";
+		console.log(a*b);
+		console.log(a+b);*/
+		// 输入一个三位数。计算这个三位数的三个数字和
+		var a = prompt("请输入一个三位数字");
+		var a = parseFloat(a);
+		// 第一个数
+		var b = parseInt(a/100);
+		// 第二个数
+		// var c = parseInt(a%100/10);
+		var c = parseInt((a-b*100)/10);
+		// 第三个数
+		var d = a%10;
+		alert("三个数字之和为" + (b+c+d));
+		var e = (6+1000%7)%7;
+		console.log("星期" + e);
+	</script>
+</body>
+</html>

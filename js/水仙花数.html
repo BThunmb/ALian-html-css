@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>水仙花数</title>
+</head>
+<body>
+	<script type="text/javascript">
+		for(var i = 100; i < 999; i++){
+			var j = parseInt(i);
+			var first = parseInt(j / 100);
+			var second = parseInt((j % 100) / 10);
+			var third = j % 10;
+			var sum = Math.pow(first,3) + Math.pow(second,3) + Math.pow(third,3);
+			if(sum == j){
+				console.log(sum);
+			}
+		}
+	</script>
+</body>
+</html>

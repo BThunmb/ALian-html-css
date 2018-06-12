@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	 	var weight = parseFloat(prompt("请您输入要计算的体重，单位为千克（kg）"));
+	 	var height = parseFloat(prompt("请您输入对应体重的身高，单位为米（cm）"));
+	 	var BMI = weight / Math.pow(height/100,2);
+	 	if(BMI < 18.5){
+	 		alert("根据科学计算，您的体重和身高过低");
+	 	}else if(BMI < 25){
+	 		alert("根据科学计算，您的体重和身高正常");
+	 	}else if(BMI < 28){
+	 		alert("根据科学计算，您的体重过重");
+	 	}else if(BMI <=32){
+	 		alert("根据科学计算，您肥胖");
+	 	}else{
+	 		alert("根据科学计算，您过度肥胖");	
+	 	}
+ 	</script>
+</body>
+</html>

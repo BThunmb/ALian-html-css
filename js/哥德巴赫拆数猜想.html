@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 拆为质数之和 -->
+	<script type="text/javascript">
+		var snum = prompt("请输入要拆分的数");
+		var inum = parseInt(snum);
+		for(var i = 1; i <= inum; i++){
+			if(zhishu(i) && zhishu(inum - i)){
+			console.log("该数" + inum +"可以表示为" + i + "与" + (inum - i) + "的两个质数之和");
+			}
+		}
+	// 封装函数返回一个数的所有因数
+		function yinshu(num){
+			var amount = 0;//初始值
+			for(var i = 1; i <= num; i++){
+				if(num % i == 0){
+					amount++;
+				}
+			}
+			return amount;
+		}
+		// 封装一个函数返回这个数是否为质数
+		function zhishu(num){
+			if(yinshu(num) == 2){
+				return num;
+			}
+		}
+	</script>
+</body>
+</html>
